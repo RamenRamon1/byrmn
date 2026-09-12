@@ -46,8 +46,8 @@ function CreditsPage() {
       <div><p className="font-mono text-[10px] tracking-[0.24em] text-primary">SELECTED WORK / 2024—2026</p><h1 className="mt-3 font-display text-4xl font-semibold sm:text-6xl">Credits</h1></div>
       <p className="hidden max-w-xs text-right text-sm leading-6 text-muted-foreground sm:block">Mixes made for detail, movement, and emotional clarity.</p>
     </header>
-    <div className="grid grid-cols-3 gap-4 border-b border-border sm:gap-8">
-      {tabs.map((tab) => <Button key={tab} variant="ghost" onClick={() => setFilter(tab)} className={`relative h-auto min-w-0 rounded-none px-0 py-5 text-[11px] shadow-none sm:text-sm ${filter === tab ? "text-foreground" : "text-muted-foreground hover:bg-transparent hover:text-foreground"}`}><span className="truncate">{tab}</span>{filter === tab && <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary" />}</Button>)}
+    <div className="flex flex-wrap items-center gap-x-10 gap-y-3 border-b border-border sm:gap-x-14">
+      {tabs.map((tab) => <Button key={tab} variant="ghost" onClick={() => setFilter(tab)} className={`h-auto min-w-0 rounded-none px-0 py-5 text-[11px] shadow-none hover:bg-transparent sm:text-sm ${filter === tab ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}><span className="relative inline-block">{tab}<span className={`absolute -bottom-5 left-0 h-0.5 w-full ${filter === tab ? "bg-primary" : "bg-transparent"}`} /></span></Button>)}
     </div>
     <section className="mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
       {visible.map((credit) => <Button key={credit.title} variant="ghost" onClick={() => setSelected(credit)} className="group relative aspect-square h-auto w-full overflow-hidden rounded-none p-0 shadow-none focus-visible:ring-2 focus-visible:ring-primary">
