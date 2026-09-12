@@ -67,7 +67,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <p className="mt-5 font-mono text-[9px] tracking-[0.18em] text-muted-foreground">© 2026 RMN</p>
         </footer>
       </aside>
-      <main className="pt-20 lg:ml-64 lg:pt-0">{children}</main>
+      <main className="pt-20 lg:ml-64 lg:pl-16 lg:pr-8 lg:pt-0 xl:pl-24 xl:pr-12">{children}</main>
     </div>
   );
 }
