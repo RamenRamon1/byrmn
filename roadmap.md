@@ -1,7 +1,7 @@
 # Roadmap
 
-- [ ] Build flat editorial RMN shell with fixed sidebar and responsive navigation
-- [ ] Build filterable artwork matrix with hover titles and record detail dialog
-- [ ] Build About/Gear and Booking routes
-- [ ] Add supplied brand assets, curated cover art, favicon, and route metadata
-- [ ] Verify desktop and mobile layouts and interactions
+- [x] Build flat editorial RMN shell with fixed sidebar and responsive navigation
+- [x] Build filterable artwork matrix with hover titles and record detail dialog
+- [x] Build About/Gear and Booking routes
+- [x] Add supplied brand assets, curated cover art, favicon, and route metadata
+- [x] Verify desktop and mobile layouts and interactions
